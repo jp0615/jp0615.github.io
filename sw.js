@@ -1,5 +1,5 @@
 /* 總入口的離線快取：只處理總入口自己的檔案；/vocab/ /times/ /column/ 交給各自的 Service Worker（或直接走網路） */
-const CACHE='hub-v1';
+const CACHE='hub-v2';
 const FILES=["/", "/manifest.webmanifest", "/h/hub-round.woff2", "/h/pixel.woff2", "/h/icon-192.png", "/h/apple-touch-icon.png"];
 const MINE=p=>p==='/'||p==='/index.html'||p==='/manifest.webmanifest'||p.startsWith('/h/');
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
