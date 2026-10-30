@@ -136,11 +136,12 @@ function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;
 var h=new Date().getHours(),g=h<11?'早安':h<18?'午安':'晚安';
 $('#hi').textContent=NAME_WHO+'，'+g+'！今天想玩哪一個？';
 /* progress chips */
+function fixN(o){var d=new Date(Date.now()+288e5).toISOString().slice(0,10),n=0,k;if(!o||typeof o!=='object'||Array.isArray(o))return 0;for(k in o){var e=o[k];if(e&&typeof e==='object'&&e.p!==d)n++}return Math.min(n,20)}
 function chips(){
-  var v=J('vocabApp.v1'),t=J('timesApp.v1'),c=J('columnApp.v1'),a=[];
-  if(v){var n=0;(v.weeks||[]).forEach(function(w){n+=(w.words||[]).length});a=[];if(+v.stars)a.push('⭐ '+(+v.stars));if(n)a.push(n+' 個單字');$('#cv').textContent=a.join('・')}
-  if(t){a=[];if(+t.stars)a.push('⭐ '+(+t.stars));if(t.vb&&t.vb.team)a.push('🏐 '+t.vb.team);$('#ct').textContent=a.join('・')}
-  if(c){var b=0,k;for(k in (c.inv||{}))b+=(+c.inv[k]||0);if(!c.inv&&+c.blocks)b=+c.blocks;$('#cc').textContent=b?'🎒 '+b+' 塊方塊':''}
+  var v=J('vocabApp.v1'),t=J('timesApp.v1'),c=J('columnApp.v1'),a=[],f;
+  if(v){var n=0;(v.weeks||[]).forEach(function(w){n+=(w.words||[]).length});a=[];if(+v.stars)a.push('⭐ '+(+v.stars));f=fixN(v.fix);if(f)a.push('💧 '+f+' 朵花等澆水');else if(n)a.push(n+' 個單字');$('#cv').textContent=a.join('・')}
+  if(t){a=[];if(+t.stars)a.push('⭐ '+(+t.stars));if(t.vb&&t.vb.team)a.push('🏐 '+t.vb.team);f=fixN(t.fx);if(f)a.push('🏐 特訓 '+f+' 題');$('#ct').textContent=a.join('・')}
+  if(c){var b=0,k;for(k in (c.inv||{}))b+=(+c.inv[k]||0);if(!c.inv&&+c.blocks)b=+c.blocks;a=[];if(b)a.push('🎒 '+b+' 塊方塊');f=fixN(c.fx);if(f)a.push('🧱 '+f+' 塊待修');$('#cc').textContent=a.join('・')}
 }
 chips();
 /* background clouds + sparkles + flags */
