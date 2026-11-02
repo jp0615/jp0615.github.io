@@ -10,6 +10,12 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#ffe9f3">
 <link rel="manifest" href="/manifest.webmanifest">
+<script>
+(function(){try{var m=location.search.match(/[?&]family=([A-Za-z0-9_-]{32,64})(?:&|$)/),L=localStorage,f;
+if(m){f=m[1];if(L.getItem('bx.f')!==f){for(var i=L.length-1;i>=0;i--){var k=L.key(i);if(/^bx\.(e|h|c|m|rp|sh|ok|lh)(\.|$)/.test(k))L.removeItem(k)}L.setItem('bx.f',f)}
+var o=location.origin,j={"name": "Brie 遊樂園", "short_name": "Brie 遊樂園", "description": "單字、九九乘法、直式計算，三個小遊戲的遊樂園", "lang": "zh-TW", "dir": "ltr", "id": "/", "start_url": "/", "scope": "/", "display": "standalone", "orientation": "any", "background_color": "#ffe9f3", "theme_color": "#ffe9f3", "icons": [{"src": "/h/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "/h/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}, {"src": "/h/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]};j.id='/';j.start_url=o+'/?family='+f;j.scope=o+'/';j.icons.forEach(function(x){x.src=o+x.src});
+var l=document.querySelector('link[rel=manifest]');if(l)l.href='data:application/manifest+json,'+encodeURIComponent(JSON.stringify(j))}}catch(e){}})();
+</script>
 <link rel="icon" href="/h/icon-192.png">
 <link rel="apple-touch-icon" href="/h/apple-touch-icon.png">
 <link rel="apple-touch-startup-image" media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/h/splash-1488x2266.png">
