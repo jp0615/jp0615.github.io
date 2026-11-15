@@ -120,6 +120,25 @@ footer{text-align:center;margin-top:26px;font-size:20px;color:#a08ab5}
   .t,.blocks .t{font-size:30px}.go{font-size:24px;padding:18px 18px}
 }
 @media (max-width:700px){.card{grid-template-columns:1fr;text-align:center}.go{justify-self:center}h1{font-size:44px}#wheel{width:110px;height:110px}}
+/* 爸媽專區（熟練地圖） */
+.pbtn{display:inline-block;margin-top:14px;font:inherit;font-size:17px;color:#a08ab5;background:rgba(255,255,255,.6);border:0;border-radius:999px;padding:8px 16px}
+.ov{position:fixed;inset:0;z-index:20;background:rgba(74,59,92,.45);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:calc(env(safe-area-inset-top) + 16px) 14px 30px}
+.gate{margin-top:12vh;background:#fff;border-radius:28px;padding:22px 24px;width:min(420px,100%);text-align:center;box-shadow:0 14px 40px rgba(60,30,80,.3)}
+.gate b{font-size:24px}.gate .q{font-size:40px;margin:12px 0 6px;font-weight:800;color:#5a3d7a}.gate .in{font-size:38px;min-height:56px;border-bottom:4px solid #e6d6f0;margin:0 30px 12px;letter-spacing:2px}
+.gk{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.gk button{font:inherit;font-size:28px;padding:12px 0;border:0;border-radius:16px;background:#f3ecf8;color:#4a3b5c}.gk .ok{background:#9b6bff;color:#fff}
+.gate small{display:block;color:#a08ab5;font-size:16px;margin-top:10px}
+.mm{background:#fffdf8;border-radius:28px;width:min(1080px,100%);padding:18px 18px 22px;box-shadow:0 14px 40px rgba(60,30,80,.3);font-family:GardenHub,"PingFang TC","Noto Sans TC",sans-serif}
+.mmtop{display:flex;justify-content:space-between;align-items:center}.mmtop b{font-size:32px;color:#5a3d7a}
+.mmx{font:inherit;font-size:20px;border:0;border-radius:999px;background:#efe6f6;color:#5a3d7a;padding:8px 16px}
+.mmleg{font-size:21px;margin:8px 2px 4px;color:#4a3b5c}.mmleg small{display:block;font-size:15px;color:#8a7a9a;margin-top:4px}
+.mmc{background:#fff;border-radius:22px;padding:12px 14px;margin-top:12px;box-shadow:0 4px 0 #efe3f3}
+.mmh{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}.mmh b{font-size:24px}.mmh span{font-size:17px;color:#7a6a8a}
+.mms{font-size:17px;color:#8a7a9a;margin:8px 0 4px}
+.mmg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.mmi{display:flex;align-items:center;gap:8px;border-radius:14px;padding:6px 10px;background:#f7f7f7}
+.mmi.lg{background:#ebf9ee}.mmi.ly{background:#fff7dc}.mmi.lr{background:#ffe9ea}.mmi.lw{background:#f2f2f4;color:#8a8a96}
+.mml{font-size:22px;flex:none}.mmn{display:flex;flex-direction:column;line-height:1.25;min-width:0}.mmn b{font-size:18px;font-weight:800}.mmn small{font-size:14px;color:#6f6480}
+.mmsg{margin-top:10px;font-size:19px;color:#3d6b2a;background:#f1faea;border-radius:14px;padding:8px 12px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}.card{opacity:1;transform:none}}
 </style>
 </head>
@@ -134,7 +153,7 @@ footer{text-align:center;margin-top:26px;font-size:20px;color:#a08ab5}
 <a class="card blocks" href="/column/" data-e="⛏️" data-c="#bfe6ff" style="--i:2"><div class="scene"><svg viewBox="0 0 240 180" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="240" height="180" fill="#9fd6ff"/><rect x="28" y="24" width="24" height="8" fill="#ffffff"/><rect x="36" y="18" width="24" height="8" fill="#ffffff"/><rect x="52" y="24" width="24" height="8" fill="#ffffff"/><rect x="150" y="40" width="24" height="8" fill="#ffffff"/><rect x="158" y="34" width="24" height="8" fill="#ffffff"/><rect x="174" y="40" width="24" height="8" fill="#ffffff"/><rect x="192" y="16" width="26" height="26" fill="#ffe066"/><rect x="196" y="20" width="18" height="18" fill="#fff2a8"/><rect x="0" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="0" y="132" width="24" height="9" fill="#5bb53a"/><rect x="4" y="141" width="5" height="4" fill="#5bb53a"/><rect x="14" y="141" width="4" height="6" fill="#5bb53a"/><rect x="6" y="154" width="4" height="4" fill="#7a5128"/><rect x="16" y="166" width="4" height="4" fill="#7a5128"/><rect x="0" y="132" width="24" height="48" fill="none"/><rect x="24" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="24" y="132" width="24" height="9" fill="#5bb53a"/><rect x="28" y="141" width="5" height="4" fill="#5bb53a"/><rect x="38" y="141" width="4" height="6" fill="#5bb53a"/><rect x="30" y="154" width="4" height="4" fill="#7a5128"/><rect x="40" y="166" width="4" height="4" fill="#7a5128"/><rect x="24" y="132" width="24" height="48" fill="none"/><rect x="48" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="48" y="132" width="24" height="9" fill="#5bb53a"/><rect x="52" y="141" width="5" height="4" fill="#5bb53a"/><rect x="62" y="141" width="4" height="6" fill="#5bb53a"/><rect x="54" y="154" width="4" height="4" fill="#7a5128"/><rect x="64" y="166" width="4" height="4" fill="#7a5128"/><rect x="48" y="132" width="24" height="48" fill="none"/><rect x="72" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="72" y="132" width="24" height="9" fill="#5bb53a"/><rect x="76" y="141" width="5" height="4" fill="#5bb53a"/><rect x="86" y="141" width="4" height="6" fill="#5bb53a"/><rect x="78" y="154" width="4" height="4" fill="#7a5128"/><rect x="88" y="166" width="4" height="4" fill="#7a5128"/><rect x="72" y="132" width="24" height="48" fill="none"/><rect x="96" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="96" y="132" width="24" height="9" fill="#5bb53a"/><rect x="100" y="141" width="5" height="4" fill="#5bb53a"/><rect x="110" y="141" width="4" height="6" fill="#5bb53a"/><rect x="102" y="154" width="4" height="4" fill="#7a5128"/><rect x="112" y="166" width="4" height="4" fill="#7a5128"/><rect x="96" y="132" width="24" height="48" fill="none"/><rect x="120" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="120" y="132" width="24" height="9" fill="#5bb53a"/><rect x="124" y="141" width="5" height="4" fill="#5bb53a"/><rect x="134" y="141" width="4" height="6" fill="#5bb53a"/><rect x="126" y="154" width="4" height="4" fill="#7a5128"/><rect x="136" y="166" width="4" height="4" fill="#7a5128"/><rect x="120" y="132" width="24" height="48" fill="none"/><rect x="144" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="144" y="132" width="24" height="9" fill="#5bb53a"/><rect x="148" y="141" width="5" height="4" fill="#5bb53a"/><rect x="158" y="141" width="4" height="6" fill="#5bb53a"/><rect x="150" y="154" width="4" height="4" fill="#7a5128"/><rect x="160" y="166" width="4" height="4" fill="#7a5128"/><rect x="144" y="132" width="24" height="48" fill="none"/><rect x="168" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="168" y="132" width="24" height="9" fill="#5bb53a"/><rect x="172" y="141" width="5" height="4" fill="#5bb53a"/><rect x="182" y="141" width="4" height="6" fill="#5bb53a"/><rect x="174" y="154" width="4" height="4" fill="#7a5128"/><rect x="184" y="166" width="4" height="4" fill="#7a5128"/><rect x="168" y="132" width="24" height="48" fill="none"/><rect x="192" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="192" y="132" width="24" height="9" fill="#5bb53a"/><rect x="196" y="141" width="5" height="4" fill="#5bb53a"/><rect x="206" y="141" width="4" height="6" fill="#5bb53a"/><rect x="198" y="154" width="4" height="4" fill="#7a5128"/><rect x="208" y="166" width="4" height="4" fill="#7a5128"/><rect x="192" y="132" width="24" height="48" fill="none"/><rect x="216" y="132" width="24" height="48" fill="#9a6a3a"/><rect x="216" y="132" width="24" height="9" fill="#5bb53a"/><rect x="220" y="141" width="5" height="4" fill="#5bb53a"/><rect x="230" y="141" width="4" height="6" fill="#5bb53a"/><rect x="222" y="154" width="4" height="4" fill="#7a5128"/><rect x="232" y="166" width="4" height="4" fill="#7a5128"/><rect x="216" y="132" width="24" height="48" fill="none"/><rect x="134" y="84" width="64" height="48" fill="#c8915a"/><rect x="134" y="84" width="64" height="4" fill="#a8743f"/><rect x="134" y="92" width="64" height="2" fill="#a8743f"/><rect x="134" y="102" width="64" height="2" fill="#a8743f"/><rect x="134" y="112" width="64" height="2" fill="#a8743f"/><rect x="134" y="122" width="64" height="2" fill="#a8743f"/><rect x="126" y="74" width="80" height="12" fill="#b04a3a"/><rect x="136" y="64" width="60" height="12" fill="#c8564a"/><rect x="150" y="54" width="32" height="12" fill="#d8665a"/><rect x="146" y="98" width="16" height="14" fill="#bfe9ff"/><rect x="146" y="98" width="16" height="2" fill="#5a3a1e"/><rect x="153" y="98" width="2" height="14" fill="#5a3a1e"/><rect x="172" y="104" width="14" height="28" fill="#6a4224"/><rect x="182" y="116" width="2" height="3" fill="#ffd23f"/><rect x="52" y="100" width="10" height="32" fill="#7a5128"/><rect x="32" y="64" width="50" height="40" fill="#3f9a2c"/><rect x="40" y="56" width="34" height="10" fill="#4fb03a"/><rect x="38" y="72" width="8" height="8" fill="#5cc04a"/><rect x="62" y="84" width="8" height="8" fill="#2f7a20"/><g class="bk"><rect x="98" y="96" width="22" height="22" fill="#5cc04a"/><rect x="98" y="96" width="22" height="5" fill="#7ad85e"/><rect x="103" y="104" width="4" height="5" fill="#1e1e1e"/><rect x="111" y="104" width="4" height="5" fill="#1e1e1e"/><rect x="104" y="111" width="10" height="3" fill="#1e1e1e"/><rect x="101" y="109" width="3" height="2" fill="#ff9ab0"/><rect x="114" y="109" width="3" height="2" fill="#ff9ab0"/></g><g class="sp"><rect x="96" y="58" width="6" height="6" fill="#7ef2ff"/><rect x="102" y="64" width="6" height="6" fill="#3ad0e0"/><rect x="90" y="64" width="6" height="6" fill="#3ad0e0"/><rect x="96" y="70" width="6" height="6" fill="#1fa8c0"/></g></svg></div><div><div class="t">直式計算小達人</div><div class="s">⛏️ 方塊世界</div><div class="chip" id="cc"></div></div><div class="go">出發 ➜</div></a>
 <a class="card quest" href="/quest/" data-e="🗡️" data-c="#e3f6ff" style="--i:3"><div class="scene"><svg viewBox="0 0 240 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="qsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9e0ff"/><stop offset="1" stop-color="#e9f8ff"/></linearGradient><radialGradient id="qgl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#b6fff6"/><stop offset="1" stop-color="#39d6c8" stop-opacity="0"/></radialGradient></defs><rect width="240" height="180" fill="url(#qsky)"/><path d="M-10 120 L40 52 L90 120Z" fill="#d6e6f2"/><path d="M28 68 L40 52 L52 68 L46 64 L40 70 L34 64Z" fill="#fff"/><path d="M150 120 L196 60 L250 120Z" fill="#cfe1ee"/><g fill="#fff" opacity=".9"><ellipse cx="190" cy="30" rx="20" ry="8"/><ellipse cx="202" cy="25" rx="12" ry="9"/></g><path d="M0 128 Q60 108 120 122 T240 116 V180 H0Z" fill="#a6dc74"/><path d="M0 150 Q80 136 160 150 T240 146 V180 H0Z" fill="#8cc95c"/><g class="qglow"><circle cx="120" cy="96" r="62" fill="url(#qgl)"/><path d="M120 96 L239.6 86.4 L239.6 105.6 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L228.4 147.5 L218.8 164.1 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L188.1 194.8 L171.5 204.4 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L129.6 215.6 L110.4 215.6 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L68.5 204.4 L51.9 194.8 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L21.2 164.1 L11.6 147.5 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L0.4 105.6 L0.4 86.4 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L11.6 44.5 L21.2 27.9 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L51.9 -2.8 L68.5 -12.4 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L110.4 -23.6 L129.6 -23.6 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L171.5 -12.4 L188.1 -2.8 Z" fill="#c9fbf4" opacity=".35"/><path d="M120 96 L218.8 27.9 L228.4 44.5 Z" fill="#c9fbf4" opacity=".35"/></g><path d="M84 140 V86 Q84 52 120 52 Q156 52 156 86 V140Z" fill="#ddd3bf" stroke="#8f8673" stroke-width="4"/><path d="M98 140 V92 Q98 70 120 70 Q142 70 142 92 V140Z" fill="#5a5446"/><path d="M98 140 V92 Q98 70 120 70 Q142 70 142 92 V140" fill="none" stroke="#39d6c8" stroke-width="3.5"/><text x="120" y="120" font-size="34" font-weight="900" text-anchor="middle" fill="#bffcf5" font-family="GardenHub,sans-serif">?</text><rect x="78" y="138" width="84" height="8" rx="3" fill="#8f8673"/><g transform="translate(150 126) scale(.85)"><g class="qch"><rect x="0" y="12" width="40" height="22" rx="3" fill="#b8733a" stroke="#6e3f19" stroke-width="2"/><rect x="0" y="18" width="40" height="4" fill="#e0a400"/><path d="M0 12 V8 Q0 0 8 0 H32 Q40 0 40 8 V12Z" fill="#c9844a" stroke="#6e3f19" stroke-width="2"/><rect x="17" y="14" width="6" height="9" rx="1.5" fill="#ffd23f"/></g></g><g transform="translate(30 106) scale(.44)"><g class="bk"><path d="M60 34 C58 20 44 12 32 16 C40 22 46 30 58 36Z" fill="#6cc04a"/><path d="M62 34 C66 18 82 10 94 16 C84 22 76 30 64 36Z" fill="#8fd65e"/><ellipse cx="60" cy="72" rx="36" ry="34" fill="#9be07a" stroke="#fff" stroke-width="3"/><ellipse cx="60" cy="78" rx="27" ry="22" fill="#c6f0a8"/><ellipse cx="47" cy="66" rx="6" ry="8" fill="#2d3a2a"/><ellipse cx="73" cy="66" rx="6" ry="8" fill="#2d3a2a"/><path d="M53 80 Q60 87 67 80" stroke="#2d3a2a" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="38" cy="80" rx="6" ry="3.6" fill="#ff9fb0"/><ellipse cx="82" cy="80" rx="6" ry="3.6" fill="#ff9fb0"/></g></g></svg></div><div><div class="t">林克的解題冒險</div><div class="s">🗡️ 神廟試煉・應用題</div><div class="chip" id="cq"></div></div><div class="go">出發 ➜</div></a>
 </main>
-<footer>🌈 每天玩一點點，就會越來越厲害喔！</footer>
+<footer>🌈 每天玩一點點，就會越來越厲害喔！<br><button class="pbtn" id="pbtn">🔒 爸媽專區</button></footer>
 </div>
 <div id="veil"><b></b></div>
 <script>
@@ -189,6 +208,92 @@ var busy=false,veil=$('#veil');
     setTimeout(function(){busy=false},2500);
   });
 });
+/* 爸媽專區：先答一題大人的乘法（二位數 × 二位數），才看得到熟練地圖 */
+/* ===== 👨‍👩‍👧 爸媽專區：熟練地圖（只讀四個遊戲存在這台裝置上的進度；不顯示也不讀任何獎勵狀態） ===== */
+var MM=(function(){
+var LT={g:['🟢','穩'],y:['🟡','偶爾錯'],r:['🔴','常卡'],w:['⚪','還沒練']};
+function day(t){return new Date((t==null?Date.now():+t)+288e5).toISOString().slice(0,10)}
+function md(t){if(!t)return '';var d=day(t);return (+d.slice(5,7))+'/'+(+d.slice(8,10))}
+function ones(h){h=String(h||'');var k=0;for(var i=0;i<h.length;i++)if(h[i]==='1')k++;return k}
+function obj(o){return o&&typeof o==='object'&&!Array.isArray(o)?o:{}}
+/* 九九乘法：跟 App 的熟練度一樣（0 沒練過…4 會了、5 熟練） */
+function tLevel(s){if(!s||(s.c+s.w)===0)return 0;var p=s.c/(s.c+s.w),h=String(s.h||''),last=function(n){return h.length>=n&&h.slice(-n).indexOf('0')<0},t=s.mn?s.ms/s.mn/1000:null;
+  if(s.c>=5&&last(4)&&p>=.8&&(t===null||t<=5))return 5;if(s.c>=3&&last(3)&&p>=.7)return 4;if(p>=.75&&last(1))return 3;if(p>=.5)return 2;return 1}
+function times(T){var st=obj(T.stats),fx=obj(T.fx),it=[],last=0,a,b,k;
+  for(a=1;a<=9;a++){var p=0,strong=0,weak=0,c=0,w=0,lt=0,nf=0;
+    for(b=1;b<=9;b++){var s=st[a+'x'+b];if(!s||!((+s.c||0)+(+s.w||0)))continue;p++;var L=tLevel({c:+s.c||0,w:+s.w||0,h:s.h,ms:+s.ms||0,mn:+s.mn||0});if(L>=4)strong++;if(L<=2)weak++;c+=+s.c||0;w+=+s.w||0;lt=Math.max(lt,+s.t||0)}
+    for(k in fx)if(+k.split('x')[0]===a)nf++;last=Math.max(last,lt);var n=c+w,l;
+    if(n<3)l='w';else if(strong>=7&&weak===0)l='g';else if(weak>=3||(n>=6&&c/n<.7))l='r';else l='y';
+    it.push({l:l,n:a+' 的乘法',d:(l==='w'?(n?'只練過 '+n+' 次':''):'學會 '+strong+' / 9・練過 '+n+' 次')+(nf?'・特訓 '+nf+' 球':''),t:lt,k:a,s:strong,c:n,weak:weak})}
+  var nx=pick(it,[2,3,4,5,6,7,8,9,1]),sg=nx?(nx.l==='w'?'開始練 '+nx.k+' 的乘法（先「背口訣」，再「開始挑戰」）':nx.l==='r'?'多練 '+nx.k+' 的乘法（挑戰時只選 '+nx.k+'，答錯的會進特訓場）':'把 '+nx.k+' 的乘法練穩（挑戰時只選 '+nx.k+'）'):'2～9 的乘法都很穩了，可以玩 60 秒挑戰';
+  return {t:'🏐 九九乘法小達人',sub:'每一個乘法表（1～9）',it:it,last:last,sg:sg}}
+/* 直式：跟 App 一樣（精通＝至少 10 題、最近 20 題 85% 以上） */
+var CL=[null,'二位數加法・不進位','二位數加法・進位','二位數減法・不退位','二位數減法・退位','三位數加法','三位數減法','綜合挑戰','整十整百的乘法','二位數×一位數・不進位','二位數×一位數・進位','三位數×一位數'];
+function column(C){var lv=obj(C.lv),fx=obj(C.fx),hist=Array.isArray(C.hist)?C.hist:[],it=[],last=0,k;
+  var lt={};hist.forEach(function(x){if(x&&+x.t){lt[x.k]=Math.max(lt[x.k]||0,+x.t);last=Math.max(last,+x.t)}});
+  for(k=1;k<CL.length;k++){var s=lv[k],n=s?+s.n||0:0,h=s?String(s.h||''):'',a=h.length?ones(h)/h.length:null,l,nf=0;
+    for(var f in fx){var q=fx[f]&&fx[f].q;if(q&&+q.k===k)nf++}
+    if(!n)l='w';else if(n>=10&&a>=.85)l='g';else if(a<.7&&h.length>=3)l='r';else l='y';
+    it.push({l:l,n:k+'. '+CL[k],d:n?'最近 '+Math.floor(a*100)+'%・'+n+' 題'+(n<10&&l==='y'?'・還要多練':'')+(nf?'・待修 '+nf:''):'',t:lt[k]||0,k:k,a:a})}
+  var nx=pick(it,[1,2,3,4,5,6,8,9,10,11,7]),sg=nx?(nx.l==='w'?'開始挑戰第 '+nx.k+' 關「'+CL[nx.k]+'」':'多練第 '+nx.k+' 關「'+CL[nx.k]+'」'+(nx.l==='r'?'（一次就對的比例還偏低）':'')):'每一關都精通了，可以玩綜合挑戰';
+  return {t:'⛏️ 直式計算小達人',sub:'每一關',it:it,last:last,sg:sg}}
+/* 單字：每週單字表（學會＝最近 4 次至少對 3 次，跟 Ante島開花一樣）＋句子練習每個句型 */
+var SP={isThere:'Is there…?',areThere:'Are there…?',isIt:'Is this / that / it…?',areThey:'Are these / those…?',whatIs:'What is this?',whatAre:'What are these?',whatColor:'What color…?',howMany:'How many…?',whereIs:'Where is…?',whereAre:'Where are…?'};
+function vocab(V){var st=obj(V.stats),fx=obj(V.fix),it=[],it2=[],last=0;
+  (Array.isArray(V.weeks)?V.weeks:[]).forEach(function(wk,i){var ws=Array.isArray(wk.words)?wk.words:[],m=0,pr=0,ok=0,tot=0,lt=0,nf=0;if(!ws.length)return;
+    ws.forEach(function(x){var s=st[x.id];if(fx[x.id])nf++;if(!s)return;var h=String(s.h||'').slice(-4);if((+s.c||0)+(+s.w||0)+(+s.x||0)>0)pr++;if((+s.c||0)+(+s.x||0)>=3&&ones(h)>=3)m++;ok+=ones(h);tot+=h.length;lt=Math.max(lt,+s.ls||0)});
+    last=Math.max(last,lt);var r=m/ws.length,acc=tot?ok/tot:0,l;
+    if(!pr)l='w';else if(r>=.8&&nf<=1)l='g';else if((r<.5&&acc<.7)||nf>=Math.max(3,ws.length*.3))l='r';else l='y';
+    it.push({l:l,n:String(wk.name||('第'+(i+1)+'週')),d:pr?'學會 '+m+' / '+ws.length+' 個'+(nf?'・澆水 '+nf:''):ws.length+' 個字',t:lt,k:i,r:r})});
+  var sst=obj(V.sst),sf=obj(V.sfix),sl=0;
+  Object.keys(SP).forEach(function(p){var s=sst[p],l,d='';if(!s||!((+s.c||0)+(+s.w||0))){it2.push({l:'w',n:SP[p],d:'',t:0,k:p});return}
+    var h=String(s.h||''),k=ones(h),tot=(+s.c||0)+(+s.w||0),life=(+s.c||0)/tot;sl=Math.max(sl,+s.ls||0);
+    if(k>=3&&life>=.6)l='g';else if((k<=1&&h.length>=2)||(life<.5&&tot>=4))l='r';else l='y';
+    it2.push({l:l,n:SP[p],d:'最近 '+k+' / '+h.length+' 對・總共 '+(+s.c||0)+' / '+tot+(sf[p]?'・澆水中':''),t:+s.ls||0,k:p,life:life})});
+  last=Math.max(last,sl);var nw=pick(it,null),ns=pick(it2,null),a=[];
+  if(nw&&nw.l!=='g')a.push((nw.l==='w'?'開始練':'複習')+'「'+nw.n+'」的單字');
+  if(ns&&ns.l!=='g')a.push('句子練習選「'+ns.n+'」'+(ns.l==='w'?'試試看':'多練幾次'));
+  return {t:'🌸 單字小達人',sub:'每週單字表',it:it,sub2:'🗣️ 句子練習・每個句型',it2:it2,last:last,sg:a.length?a.join('；'):'單字和句型都很穩，可以加新的一週'}}
+/* 應用題：每個單元、每種思考題（整題一次就做對的比例；跟 App 家長設定一樣用 85% / 60%） */
+var QU={1:'🌾 單元 1・200以內的數',2:'🏮 單元 2・二位數的加減',3:'🌋 單元 3・公分',4:'🏡 單元 4・加減應用',5:'💧 單元 5・容量'};
+var QT=[['ask','① 看懂題目問什麼','ask'],['story','同一則故事兩問',null],['extra','哪個數字用不到','extra'],['err','幫林克找錯','spot'],['qpick','選對的問句','qpick']];
+function lt3(c,n,min){if(!n)return 'w';var r=c/n;if(r>=.85&&n>=min)return 'g';if(r<.6&&n>=3)return 'r';return 'y'}
+function quest(Q){var u=obj(Q.u),tk=obj(Q.tk),st=obj(Q.st),it=[],it2=[],last=0;
+  (Array.isArray(Q.hist)?Q.hist:[]).forEach(function(x){if(x&&+x.t)last=Math.max(last,+x.t)});
+  Object.keys(QU).forEach(function(k){var o=u[k]||{},n=+o.n||0,f=+o.f||0,l=lt3(f,n,5);it.push({l:l,n:QU[k],d:n?'一次就對 '+f+' / '+n+'（'+Math.floor(f/n*100)+'%）':'',t:+o.t||0,k:+k,r:n?f/n:0})});
+  QT.forEach(function(q){var o=q[0]==='ask'?st.ask:(tk[q[0]]||(q[2]?st[q[2]]:null)),c=o?+o.c||0:0,n=o?c+(+o.w||0):0,l=lt3(c,n,3);
+    it2.push({l:l,n:q[1],d:n?'第一次就做對 '+c+' / '+n:'',k:q[0],r:n?c/n:0})});
+  var nu=pick(it,[1,2,3,4,5]),nt=pick(it2.slice(1),null),a=[];
+  if(nu&&nu.l!=='g')a.push((nu.l==='w'?'開始玩':'多練')+'「'+nu.n.replace(/^\S+ /,'')+'」（從冒險地圖點那個地區）');
+  if(nt&&nt.l==='w')a.push('思考石板還沒練過，多玩幾輪就會出現');else if(nt&&nt.l!=='g')a.push('思考題「'+nt.n+'」要多練');
+  return {t:'🗡️ 林克的解題冒險',sub:'每個單元',it:it,sub2:'🧩 每種思考題',it2:it2,last:last,sg:a.length?a.join('；'):'五個單元和思考題都很穩'}}
+/* 下一步：先挑「常卡」，再挑「還沒練」，再挑「偶爾錯」 */
+function pick(it,order){var o=it.slice();if(order)o.sort(function(a,b){return order.indexOf(a.k)-order.indexOf(b.k)});
+  var w={r:0,w:1,y:2};for(var lv in w){var c=o.filter(function(x){return x.l===lv});if(c.length){if(lv==='r'||lv==='y')c.sort(function(a,b){return (a.r!=null&&b.r!=null)?a.r-b.r:0});return c[0]}}return null}
+function J(k){try{var o=JSON.parse(localStorage.getItem(k));return o&&typeof o==='object'?o:null}catch(e){return null}}
+function all(){var r=[],o;if(o=J('timesApp.v1'))r.push(times(o));if(o=J('columnApp.v1'))r.push(column(o));if(o=J('vocabApp.v1'))r.push(vocab(o));if(o=J('questApp.v1'))r.push(quest(o));return r}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function cells(it){return '<div class="mmg">'+it.map(function(x){return '<div class="mmi l'+x.l+'"><span class="mml">'+LT[x.l][0]+'</span><span class="mmn"><b>'+esc(x.n)+'</b><small>'+LT[x.l][1]+(x.d?'・'+esc(x.d):'')+(x.t?'・'+md(x.t):'')+'</small></span></div>'}).join('')+'</div>'}
+function html(){var A=all(),h='<div class="mmtop"><b>📊 熟練地圖</b><button class="mmx" data-mm="close">✕ 關閉</button></div>'+
+  '<div class="mmleg">🟢 穩　🟡 偶爾錯　🔴 常卡　⚪ 還沒練<small>讀這台 iPad 上的進度（有開雲端同步就包含其他裝置）。日期是最後練習的那天（台灣時間）。</small></div>';
+  if(!A.length)h+='<div class="mmc">這台裝置還沒有練習紀錄。</div>';
+  A.forEach(function(a){h+='<div class="mmc"><div class="mmh"><b>'+a.t+'</b><span>'+(a.last?'最後練習：'+md(a.last):'還沒練習')+'</span></div><div class="mms">'+esc(a.sub)+'</div>'+cells(a.it)+
+    (a.it2?'<div class="mms">'+esc(a.sub2)+'</div>'+cells(a.it2):'')+'<div class="mmsg">👉 下一步：'+esc(a.sg)+'</div></div>'});
+  return h}
+return {html:html,times:times,column:column,vocab:vocab,quest:quest,tLevel:tLevel}})();
+
+var GQ=null,GV='';
+function ovClose(){var o=$('#pov');if(o)o.remove()}
+function gateDraw(){var o=$('#pov');if(!o){o=document.createElement('div');o.id='pov';o.className='ov';document.body.appendChild(o)}
+  o.innerHTML='<div class="gate"><b>🔒 爸媽專區</b><div class="q">'+GQ[0]+' × '+GQ[1]+' = ?</div><div class="in">'+(GV||'&nbsp;')+'</div><div class="gk">'+
+  ['1','2','3','4','5','6','7','8','9','⌫','0','OK'].map(function(k){return '<button data-k="'+k+'"'+(k==='OK'?' class="ok"':'')+'>'+k+'</button>'}).join('')+'</div><small>請大人回答・<span data-k="x" style="text-decoration:underline">取消</span></small></div>'}
+function gateOpen(){GQ=[12+Math.floor(Math.random()*8),12+Math.floor(Math.random()*8)];GV='';gateDraw()}
+function mmOpen(){var o=$('#pov');if(!o){o=document.createElement('div');o.id='pov';o.className='ov';document.body.appendChild(o)}o.innerHTML='<div class="mm">'+MM.html()+'</div>';o.scrollTop=0}
+$('#pbtn').addEventListener('click',gateOpen);
+document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-k],[data-mm]');if(!t){if(e.target.id==='pov')ovClose();return}
+  if(t.dataset.mm==='close'){ovClose();return}var k=t.dataset.k;if(!k)return;
+  if(k==='x'){ovClose();return}if(k==='⌫'){GV=GV.slice(0,-1)}else if(k==='OK'){if(+GV===GQ[0]*GQ[1]){mmOpen();return}GQ=[12+Math.floor(Math.random()*8),12+Math.floor(Math.random()*8)];GV=''}else if(GV.length<4)GV+=k;gateDraw()});
+window.__mm=MM;
 window.addEventListener('pageshow',function(){veil.classList.remove('go2');busy=false;chips()});
 /* offline: hub files, and warm up the four games so they open even without Wi-Fi */
 if('serviceWorker' in navigator){window.addEventListener('load',function(){
