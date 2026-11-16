@@ -255,7 +255,7 @@ function vocab(V){var st=obj(V.stats),fx=obj(V.fix),it=[],it2=[],last=0;
   if(ns&&ns.l!=='g')a.push('句子練習選「'+ns.n+'」'+(ns.l==='w'?'試試看':'多練幾次'));
   return {t:'🌸 單字小達人',sub:'每週單字表',it:it,sub2:'🗣️ 句子練習・每個句型',it2:it2,last:last,sg:a.length?a.join('；'):'單字和句型都很穩，可以加新的一週'}}
 /* 應用題：每個單元、每種思考題（整題一次就做對的比例；跟 App 家長設定一樣用 85% / 60%） */
-var QU={1:'🌾 單元 1・200以內的數',2:'🏮 單元 2・二位數的加減',3:'🌋 單元 3・公分',4:'🏡 單元 4・加減應用',5:'💧 單元 5・容量'};
+var QU={1:'🌾 單元 1・200以內的數',2:'🏮 單元 2・二位數的加減',3:'🌋 單元 3・公分',4:'🏡 單元 4・加減應用',5:'💧 單元 5・容量',6:'🪶 單元 6・加減兩步驟'};
 var QT=[['ask','① 看懂題目問什麼','ask'],['story','同一則故事兩問',null],['extra','哪個數字用不到','extra'],['err','幫林克找錯','spot'],['qpick','選對的問句','qpick']];
 function lt3(c,n,min){if(!n)return 'w';var r=c/n;if(r>=.85&&n>=min)return 'g';if(r<.6&&n>=3)return 'r';return 'y'}
 function quest(Q){var u=obj(Q.u),tk=obj(Q.tk),st=obj(Q.st),it=[],it2=[],last=0;
@@ -263,10 +263,10 @@ function quest(Q){var u=obj(Q.u),tk=obj(Q.tk),st=obj(Q.st),it=[],it2=[],last=0;
   Object.keys(QU).forEach(function(k){var o=u[k]||{},n=+o.n||0,f=+o.f||0,l=lt3(f,n,5);it.push({l:l,n:QU[k],d:n?'一次就對 '+f+' / '+n+'（'+Math.floor(f/n*100)+'%）':'',t:+o.t||0,k:+k,r:n?f/n:0})});
   QT.forEach(function(q){var o=q[0]==='ask'?st.ask:(tk[q[0]]||(q[2]?st[q[2]]:null)),c=o?+o.c||0:0,n=o?c+(+o.w||0):0,l=lt3(c,n,3);
     it2.push({l:l,n:q[1],d:n?'第一次就做對 '+c+' / '+n:'',k:q[0],r:n?c/n:0})});
-  var nu=pick(it,[1,2,3,4,5]),nt=pick(it2.slice(1),null),a=[];
+  var nu=pick(it,[1,2,3,4,5,6]),nt=pick(it2.slice(1),null),a=[];
   if(nu&&nu.l!=='g')a.push((nu.l==='w'?'開始玩':'多練')+'「'+nu.n.replace(/^\S+ /,'')+'」（從冒險地圖點那個地區）');
   if(nt&&nt.l==='w')a.push('思考石板還沒練過，多玩幾輪就會出現');else if(nt&&nt.l!=='g')a.push('思考題「'+nt.n+'」要多練');
-  return {t:'🗡️ 林克的解題冒險',sub:'每個單元',it:it,sub2:'🧩 每種思考題',it2:it2,last:last,sg:a.length?a.join('；'):'五個單元和思考題都很穩'}}
+  return {t:'🗡️ 林克的解題冒險',sub:'每個單元',it:it,sub2:'🧩 每種思考題',it2:it2,last:last,sg:a.length?a.join('；'):'每個單元和思考題都很穩'}}
 /* 下一步：先挑「常卡」，再挑「還沒練」，再挑「偶爾錯」 */
 function pick(it,order){var o=it.slice();if(order)o.sort(function(a,b){return order.indexOf(a.k)-order.indexOf(b.k)});
   var w={r:0,w:1,y:2};for(var lv in w){var c=o.filter(function(x){return x.l===lv});if(c.length){if(lv==='r'||lv==='y')c.sort(function(a,b){return (a.r!=null&&b.r!=null)?a.r-b.r:0});return c[0]}}return null}
