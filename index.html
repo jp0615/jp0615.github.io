@@ -238,7 +238,7 @@ function column(C){var lv=obj(C.lv),fx=obj(C.fx),hist=Array.isArray(C.hist)?C.hi
   var nx=pick(it,[1,2,3,4,5,6,8,9,10,11,7]),sg=nx?(nx.l==='w'?'開始挑戰第 '+nx.k+' 關「'+CL[nx.k]+'」':'多練第 '+nx.k+' 關「'+CL[nx.k]+'」'+(nx.l==='r'?'（一次就對的比例還偏低）':'')):'每一關都精通了，可以玩綜合挑戰';
   return {t:'⛏️ 直式計算小達人',sub:'每一關',it:it,last:last,sg:sg}}
 /* 單字：每週單字表（學會＝最近 4 次至少對 3 次，跟 Ante島開花一樣）＋句子練習每個句型 */
-var SP={isThere:'Is there…?',areThere:'Are there…?',isIt:'Is this / that / it…?',areThey:'Are these / those…?',whatIs:'What is this?',whatAre:'What are these?',whatColor:'What color…?',howMany:'How many…?',whereIs:'Where is…?',whereAre:'Where are…?'};
+var SP={isThere:'Is there…?',areThere:'Are there…?',isIt:'Is this / that / it…?',areThey:'Are these / those…?',whatIs:'What is this?',whatAre:'What are these?',whatColor:'What color…?',howMany:'How many…?',whereIs:'Where is…?',whereAre:'Where are…?',whereWho:'Where is / are＋誰的…？'};
 function vocab(V){var st=obj(V.stats),fx=obj(V.fix),it=[],it2=[],last=0;
   (Array.isArray(V.weeks)?V.weeks:[]).forEach(function(wk,i){var ws=Array.isArray(wk.words)?wk.words:[],m=0,pr=0,ok=0,tot=0,lt=0,nf=0;if(!ws.length)return;
     ws.forEach(function(x){var s=st[x.id];if(fx[x.id])nf++;if(!s)return;var h=String(s.h||'').slice(-4);if((+s.c||0)+(+s.w||0)+(+s.x||0)>0)pr++;if((+s.c||0)+(+s.x||0)>=3&&ones(h)>=3)m++;ok+=ones(h);tot+=h.length;lt=Math.max(lt,+s.ls||0)});
